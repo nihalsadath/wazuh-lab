@@ -19,6 +19,11 @@ The goal is to simulate attacks, integrate threat intelligence, and detect malic
 ## Use Cases Implemented
 
 ### 1. File Integrity Monitoring (FIM)
+File Integrity Monitoring (FIM) is crucial for maintaining a system's security and integrity by detecting and recognizing unauthorized modifications to files. 
+- Unauthorized Changes Detection: To stop security breaches, FIM identifies and alerts users when critical system files are modified without authorization.
+- Compliance Requirement: To comply with regulatory standards, like PCI DSS, HIPAA, and GDPR, FIM deployment is required.
+- Insider Threat Mitigation: By monitoring modifications made by internal users, FIM aids in identifying and addressing potential insider threats
+
 - Monitored `C:\Windows\System32\drivers\etc\hosts` on Windows 11
 - Detected changes and generated alerts
 
