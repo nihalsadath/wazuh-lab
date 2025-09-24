@@ -1,12 +1,12 @@
-# 🔐 Wazuh Threat Detection & CTI Lab
+# Wazuh Threat Detection & CTI Lab
 
-## 📌 Project Overview
+## Project Overview
 This project demonstrates how to build a **Threat Detection & Monitoring Lab** using **Wazuh SIEM**, Windows 11 endpoint, and ParrotOS attacker machine.  
 The goal is to simulate attacks, integrate threat intelligence, and detect malicious activity in real time.
 
 ---
 
-## ⚙️ Lab Architecture
+## Lab Architecture
 - **Wazuh Manager (OVA)** – running on VMware
 - **Windows 11 VM (Agent Installed)** – monitored endpoint
 - **ParrotOS VM (Attacker Machine)** – used for brute force & malware simulation
@@ -16,7 +16,7 @@ The goal is to simulate attacks, integrate threat intelligence, and detect malic
 
 ---
 
-## 🔎 Use Cases Implemented
+## Use Cases Implemented
 
 ### 1. File Integrity Monitoring (FIM)
 - Monitored `C:\Windows\System32\drivers\etc\hosts` on Windows 11
@@ -52,7 +52,7 @@ The goal is to simulate attacks, integrate threat intelligence, and detect malic
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 ```bash
 wazuh-cti-lab/
 │
