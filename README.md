@@ -12,7 +12,7 @@ The goal is to simulate attacks, integrate threat intelligence, and detect malic
 - **ParrotOS VM (Attacker Machine)** – used for brute force & malware simulation
 - **Host Machine** – running Wazuh Dashboard
 
-![Architecture](docs/architecture.png)
+<img src="images/architecture.png" alt="Architecture" width="400"> 
 
 ---
 
