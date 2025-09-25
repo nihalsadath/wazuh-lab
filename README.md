@@ -20,8 +20,24 @@ The goal is to simulate attacks, integrate threat intelligence, and detect malic
 
 ### 1. File Integrity Monitoring (FIM)
 File Integrity Monitoring (FIM) is crucial for maintaining a system's security and integrity by detecting and recognizing unauthorized modifications to files. 
+
+
 - Monitored `C:\Windows\System32\drivers\etc\hosts` on Windows 11
+
+  Configuration:
+  ```
+  <directories recursion_level="0" check_all="yes" report_content="yes" realtime="yes">%WINDIR%\System32\drivers\etc</directories>
+  
 - Detected changes and generated alerts
+
+  ```
+  Sep 25, 2025 @ 10:31:00.991
+  agent.name: windows
+  File: 'c:\windows\system32\drivers\etc\hosts'
+  syscheck.event: modified
+  rule.id: 550
+  rule.description: Integrity checksum changed
+  rule.level: 7
 
 ![FIM Example](docs/fim-example.png)
 
