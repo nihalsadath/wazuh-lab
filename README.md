@@ -39,7 +39,7 @@ File Integrity Monitoring (FIM) is crucial for maintaining a system's security a
   rule.description: Integrity checksum changed
   rule.level: 7
 
-<img src="docs/fim-example1.png" alt="FIM Example" width="400"> <img src="docs/fim-example2.png" alt="FIM Example" width="400"> <img src="docs/fim-example3.png" alt="FIM Example" width="400"> 
+<img src="docs/fim-example1.png" alt="FIM Example" width="400"> <img src="docs/fim-example2.png" alt="FIM Example" width="500"> <img src="docs/fim-example3.png" alt="FIM Example" width="400"> 
 
 ---
 
