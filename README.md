@@ -60,7 +60,7 @@ rule.id: 100004
 rule.level: 12
 mitre.technique: PowerShell(T1059.001), Ingress Tool Transfer(T1105), Web Protocols(T1071.001)
 ```
-<img src="docs/sysmon1.png" alt="Sysmon Example" width="400"> <img src="docs/sysmon2.png" alt="Sysmon example" width="400">
+<img src="docs/sysmon2.png" alt="Sysmon example" width="400"> <img src="docs/sysmon1.png" alt="Sysmon Example" width="530">
 
 ---
 
