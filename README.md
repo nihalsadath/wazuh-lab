@@ -64,20 +64,20 @@ mitre.technique: PowerShell(T1059.001), Ingress Tool Transfer(T1105), Web Protoc
 
 ---
 
-### 3. Threat Intelligence Integration
-- Integrated **AlienVault OTX** with Wazuh
-- Any connection to known malicious IP triggered alerts
-
-![TI Example](docs/ti-integration.png)
-
----
-
 ### 4. Attack Simulation
 - Used **Hydra** from ParrotOS to brute-force SSH login
 - Wazuh generated **Brute Force Detection Alert**
 - Tested with **EICAR test malware** for malware detection
 
 ![Brute Force Example](docs/brute-force.png)
+
+---
+
+### 3. Threat Intelligence Integration
+- Integrated **AlienVault OTX** with Wazuh
+- Any connection to known malicious IP triggered alerts
+
+![TI Example](docs/ti-integration.png)
 
 ---
 
