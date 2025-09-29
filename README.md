@@ -78,7 +78,7 @@ rule.level: 12
 rule.description: File "c:\users\nihal\downloads\eicar\eicar.com" is a positive match. Yara rule: SUSP_Just_EICAR_RID2C24
 
 ```
-<img src="docs/malware_detection.png" alt="Malware example" width="400">
+<img src="docs/malware_detection.png" alt="Malware example" width="750">
 ---
 ### 4. Brute Force Detection
 - Used **Hydra** from ParrotOS to brute-force SSH login
