@@ -79,11 +79,13 @@ rule.description: File "c:\users\nihal\downloads\eicar\eicar.com" is a positive 
 
 ```
 <img src="docs/malware_detection.png" alt="Malware example" width="750">
+
 ---
+
 ### 4. Brute Force Detection
 - Used **Hydra** from ParrotOS to brute-force SSH login
 - Wazuh generated **Brute Force Detection Alert**
-  
+
 ---
 
 ### 5. Threat Intelligence Integration
