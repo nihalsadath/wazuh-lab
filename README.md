@@ -64,16 +64,30 @@ mitre.technique: PowerShell(T1059.001), Ingress Tool Transfer(T1105), Web Protoc
 
 ---
 
-### 4. Attack Simulation
-- Used **Hydra** from ParrotOS to brute-force SSH login
-- Wazuh generated **Brute Force Detection Alert**
+### 3. Malware Detection with YARA
+- Configured YARA and YARA rules in wazuh agent and server
+- Configured File Integrity Monitoring
+- Integrated YARA with Wazuh Active Response
 - Tested with **EICAR test malware** for malware detection
+- Wazuh agent triggered FIM → YARA scan executed → Malware detected
+```
+Sep 29, 2025 @ 11:06:03.642
+agent.name: windows
+rule.id: 108001
+rule.level: 12
+rule.description: File "c:\users\nihal\downloads\eicar\eicar.com" is a positive match. Yara rule: SUSP_Just_EICAR_RID2C24
 
-![Brute Force Example](docs/brute-force.png)
+```
+![Malware Detection Example](docs/malware_detection.png)
 
 ---
+### 4. Brute Force Detection
+- Used **Hydra** from ParrotOS to brute-force SSH login
+- Wazuh generated **Brute Force Detection Alert**
+  
+---
 
-### 3. Threat Intelligence Integration
+### 5. Threat Intelligence Integration
 - Integrated **AlienVault OTX** with Wazuh
 - Any connection to known malicious IP triggered alerts
 
