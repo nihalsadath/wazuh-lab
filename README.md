@@ -83,8 +83,17 @@ rule.description: File "c:\users\nihal\downloads\eicar\eicar.com" is a positive 
 ---
 
 ### 4. Brute Force Detection
-- Used **Hydra** from ParrotOS to brute-force SSH login
-- Wazuh generated **Brute Force Detection Alert**
+- Used **Hydra** from ParrotOS to brute-force RDP login in windows 11
+- Wazuh generated **Brute Force Detection Alert** and blocked user account
+```
+Oct 4, 2025 @ 11:15:23.599
+agent.name: windows
+rule.description: User account locked out (multiple login errors)
+rule.id: 60115
+rule.level: 9
+Mitre Technique: Brute Force(T1110), Account Access Removal(T1531)
+```
+<img src="docs/bruteforce1.png" alt="Bruteforce example" width="500"> <img src="docs/bruteforce2.png" alt="Bruteforce example" width="500"> <img src="docs/bruteforce3.png" alt="Bruteforce example" width="500">
 
 ---
 
