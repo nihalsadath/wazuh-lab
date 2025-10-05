@@ -96,8 +96,11 @@ Mitre Technique: Brute Force(T1110), Account Access Removal(T1531)
 <img src="docs/bruteforce1.png" alt="Bruteforce example" width="500"> <img src="docs/bruteforce2.png" alt="Bruteforce example" width="500"> <img src="docs/bruteforce3.png" alt="Bruteforce example" width="500">
 
 ---
+### 5. SQL injection detection
+-
+---
 
-### 5. Threat Intelligence Integration
+### 6. Threat Intelligence Integration
 - Integrated **AlienVault OTX** with Wazuh
 - Any connection to known malicious IP triggered alerts
 
