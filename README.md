@@ -115,11 +115,19 @@ Mitre Technique: Process Injection(T1055), Exploit Public-Facing Application(T11
 
 ---
 
-### 6. Threat Intelligence Integration
-- Integrated **AlienVault OTX** with Wazuh
-- Any connection to known malicious IP triggered alerts
-
-![TI Example](docs/ti-integration.png)
+### 6. Blocking a known malicious actor using Alienvault
+- Downloaded and configured the Alienvault IP reputation database in wazuh server
+- Appended the IP address of the attacker endpoint(ParrotOS) to the IP reputation database
+- Created a custom rule and configured the Active Response module to block the malicious IP address
+- Connection from malicious IP triggered alerts
+```
+Oct 8, 2025 @ 11:46:47.457
+agent.name: windows
+rule.description: IP address found in AlienVault reputation database.
+rule.id: 657, 100100
+rule.level: 10
+```
+<img src="docs/blk2.png" alt="blocking example" width="500"> <img src="docs/blk3.png" alt="blocking example" width="600"> <img src="docs/blk4.png" alt="blocking example" width="600">
 
 ---
 
