@@ -97,7 +97,22 @@ Mitre Technique: Brute Force(T1110), Account Access Removal(T1531)
 
 ---
 ### 5. SQL injection detection
--
+- Deployed a deliberately vulnerable web app (DVWA) on windows 11.
+- Collected webserver logs (Apache) and PHP error logs with the Wazuh agent.
+- Tested by submitting injection payloads through the DVWA app and confirm Wazuh alerts.
+
+```
+Oct 8, 2025 @ 10:30:39.679
+agent.name: windows
+rule.description: SQL injection attempt
+data.url: "/DVWA/vulnerabilities/fi/?page=1%27%20or%20%271%27=%271--"
+rule.id: 31164
+rule.level: 6
+Mitre Technique: Process Injection(T1055), Exploit Public-Facing Application(T1190)
+```
+<img src="docs/sqli1.png" alt="SQLi example" width="500"> <img src="docs/sqli2.png" alt="SQLi example" width="500"> <img src="docs/sqli3.png" alt="SQLi example" width="500">
+
+
 ---
 
 ### 6. Threat Intelligence Integration
