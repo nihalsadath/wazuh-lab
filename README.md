@@ -115,7 +115,7 @@ Mitre Technique: Process Injection(T1055), Exploit Public-Facing Application(T11
 
 ---
 
-### 6. Blocking a known malicious actor using Alienvault
+### 6. Blocking a known malicious actor 
 - Downloaded and configured the Alienvault IP reputation database in wazuh server
 - Appended the IP address of the attacker endpoint(ParrotOS) to the IP reputation database
 - Created a custom rule and configured the Active Response module to block the malicious IP address
