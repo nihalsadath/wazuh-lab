@@ -127,7 +127,7 @@ rule.description: IP address found in AlienVault reputation database.
 rule.id: 657, 100100
 rule.level: 10
 ```
-<img src="docs/blk2.png" alt="blocking example" width="500"> <img src="docs/blk3.png" alt="blocking example" width="600"> <img src="docs/blk4.png" alt="blocking example" width="600">
+<img src="docs/blk2.png" alt="blocking example" width="500"> <img src="docs/blk4.png" alt="blocking example" width="600">
 
 ---
 
