@@ -134,6 +134,17 @@ rule.level: 10
 ### Command monitoring
 - Configured wazuh agent and wazuh manager
 - Execution of suspicious tools triggered alerts
-  
+```
+Oct 12, 2025 @ 11:33:22.843
+agent.name: windows
+rule.description: Suspicious tool detected in process list
+Process Detected: ncat.exe
+rule.id: 100010
+rule.level: 10
+
+Full Log Extract:
+  ossec: output: 'C:\Windows\System32\tasklist.exe': 
+  ncat.exe    11196 Console    1    7,348 K
+```
 <img src="docs/cmd1.png" alt="Commands example" width="500"> <img src="docs/cmd2.png" alt="Commands example" width="600"> <img src="docs/cmd3.png" alt="Commands example" width="600">
 
