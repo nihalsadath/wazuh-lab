@@ -131,10 +131,9 @@ rule.level: 10
 
 ---
 
-## Repository Structure
-```bash
-wazuh-cti-lab/
-│
-├── docs/               # Screenshots & diagrams
-├── wazuh-configs/      # Configurations & custom rules
-└── reports/            # Final project report
+### Command monitoring
+- Configured wazuh agent and wazuh manager
+- Execution of suspicious tools triggered alerts
+  
+<img src="docs/cmd1.png" alt="Commands example" width="500"> <img src="docs/cmd2.png" alt="Commands example" width="600"> <img src="docs/cmd3.png" alt="Commands example" width="600">
+
