@@ -142,5 +142,5 @@ Process Detected: ncat.exe
 rule.id: 100001
 rule.level: 12
 ```
-<img src="docs/cmd1.png" alt="Commands example" width="500"> <img src="docs/cmd2.png" alt="Commands example" width="600"> <img src="docs/cmd3.png" alt="Commands example" width="600">
+<img src="docs/cmd1.png" alt="Commands example" width="500"> <img src="docs/cmd4.png" alt="Commands example" width="600"> <img src="docs/cmd3.png" alt="Commands example" width="600">
 
