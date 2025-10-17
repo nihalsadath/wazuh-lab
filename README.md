@@ -135,16 +135,12 @@ rule.level: 10
 - Configured wazuh agent and wazuh manager
 - Execution of suspicious tools triggered alerts
 ```
-Oct 12, 2025 @ 11:33:22.843
+Oct 17, 2025 @ 10:46:41.506
 agent.name: windows
-rule.description: Suspicious tool detected in process list
+rule.description: Suspicious Process Detected: Common hacking tools (Netcat, Ncat, Mimikatz, PsExec) are running.
 Process Detected: ncat.exe
-rule.id: 100010
-rule.level: 10
-
-Full Log Extract:
-  ossec: output: 'C:\Windows\System32\tasklist.exe': 
-  ncat.exe    11196 Console    1    7,348 K
+rule.id: 100001
+rule.level: 12
 ```
 <img src="docs/cmd1.png" alt="Commands example" width="500"> <img src="docs/cmd2.png" alt="Commands example" width="600"> <img src="docs/cmd3.png" alt="Commands example" width="600">
 
