@@ -131,7 +131,7 @@ rule.level: 10
 
 ---
 
-### Command monitoring
+### 7. Command monitoring
 - Configured wazuh agent and wazuh manager
 - Execution of suspicious tools triggered alerts
 ```
